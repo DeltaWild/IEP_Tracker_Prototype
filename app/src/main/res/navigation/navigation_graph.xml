@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph.xml"
+    app:startDestination="@id/authFragment">
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.grey.niko.firebasetest.view.AuthFragment"
+        android:label="auth_fragment"
+        tools:layout="@layout/auth_fragment" >
+        <action
+            android:id="@+id/action_authToRegister"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_authToMain"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.grey.niko.firebasetest.view.RegisterFragment"
+        android:label="register_fragment"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/action_registerToAuth"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_registerToMain"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.grey.niko.firebasetest.view.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainToAuth"
+            app:destination="@id/authFragment" />
+        <action
+            android:id="@+id/action_mainToStudentDetail"
+            app:destination="@id/studentDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/studentDetailFragment"
+        android:name="com.grey.niko.firebasetest.view.StudentDetailFragment"
+        android:label="student_detail_fragment"
+        tools:layout="@layout/student_detail_fragment" >
+        <argument
+            android:name="studentId"
+            app:argType="string"
+            android:defaultValue="001" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_mainFragment"
+        app:destination="@id/mainFragment" />
+    <fragment
+        android:id="@+id/teamMemberFragment"
+        android:name="com.grey.niko.firebasetest.view.TeamMemberFragment"
+        android:label="TeamMemberFragment"
+        tools:layout="@layout/team_member_fragment" />
+
+</navigation>

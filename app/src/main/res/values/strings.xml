@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">FirebaseTestMVVM</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="add_user">Add User</string>
+    <string name="id">ID</string>
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="no_network">No network connection</string>
+    <string name="unknown_error">An unknown error has occurred</string>
+    <string name="auth_fail">Authentication failed</string>
+    <string name="verify_email_sent">Verification email sent</string>
+    <string name="error_db_create_id">Error creating database id</string>
+    <string name="user_added">User added</string>
+    <string name="empty_id">ID field cannot be empty</string>
+    <string name="invalid_email">Please enter a valid email address.</string>
+    <string name="password_char_len">Passwords must be at least 8 characters.</string>
+    <string name="something_changed">Something changed</string>
+    <string name="register_failed">Registration failed.</string>
+    <string name="name_req">Name is required.</string>
+    <string name="mismatched_passwords">Passwords must match.</string>
+    <string name="weak_password">Password must meet minimum security standards.</string>
+    <string name="long_click_detected">Long click detected.</string>
+    <string name="click_detected">Click detected.</string>
+    <string name="delete_goal">Delete goal?</string>
+    <string name="delete">DELETE</string>
+    <string name="delete_student">Delete student?</string>
+    <string name="function_not_available">This function is not yet available.</string>
+    <string name="goal_id_req">A goal ID is required.</string>
+    <string name="student_id_req">A student ID is required.</string>
+    <string name="delete_team_member">Delete team member?</string>
+    <string name="position">Position</string>
+    <string name="school">School</string>
+    <string name="teamMember_id_req">A team member ID is required.</string>
+    <string name="student_list">Student List</string>
+    <string name="team_members">Team Members</string>
+    <string name="logout">Logout</string>
+    <string name="toggle_dark_mode">Toggle Dark Mode</string>
+    <string name="iep_tracker">IEP Tracker</string>
+</resources>

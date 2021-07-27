@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="button_radius">12dp</dimen>
+    <dimen name="list_item_radius">6dp</dimen>
+    <dimen name="button_min_width">60dp</dimen>
+    <dimen name="button_max_width">250dp</dimen>
+    <dimen name="card_corner_radius">4dp</dimen>
+    <dimen name="card_elev">4dp</dimen>
+</resources>

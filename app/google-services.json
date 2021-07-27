@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "626504303985",
+    "project_id": "testdb-1107633",
+    "storage_bucket": "testdb-1107633.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626504303985:android:98fab805941be7ae97a2d0",
+        "android_client_info": {
+          "package_name": "com.grey.niko.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626504303985-qr9uf9gnn77rbvhglvc82pt0h0hl5u34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDchS7q8gyGuVJs7d8i9615RQNEevm92FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626504303985-qr9uf9gnn77rbvhglvc82pt0h0hl5u34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

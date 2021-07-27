@@ -1,0 +1,110 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Top level theme -->
+    <style name="Theme.FirebaseTest.DayNight" parent="Theme.FirebaseTest" />
+    <!-- Base application theme. -->
+    <style name="Theme.FirebaseTest" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_mid</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_light</item>
+
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimaryDark">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_mid</item>
+        <item name="colorSecondaryDark">@color/secondary_dark</item>
+        <item name="colorSecondaryVariant">@color/secondary_light</item>
+
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondaryDark">@color/white</item>
+
+        <!-- Surface colors. -->
+        <item name="colorSurface">?attr/colorPrimary</item>
+        <item name="colorOnSurface">?attr/colorOnPrimary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryDark</item>
+
+        <!-- Card style ref. -->
+        <item name="materialCardViewStyle">@style/CardStyleThemeOverlay</item>
+
+        <!-- FAB style ref. -->
+        <item name="floatingActionButtonStyle">@style/FabStyle</item>
+
+        <!-- Button style ref. -->
+        <item name="buttonStyle">@style/ButtonStyle</item>
+
+        <!-- Bottom nav style ref.-->
+        <item name="bottomNavigationStyle">@style/BottomNavThemeOverlay</item>
+
+        <!-- Snackbar style ref. -->
+        <item name="snackbarStyle">@style/SnackbarStyle</item>
+        <item name="snackbarButtonStyle">@style/SnackbarButtonStyle</item>
+        <item name="snackbarTextViewStyle">@style/SnackbarTextViewStyle</item>
+
+    </style>
+
+    <!-- Card style. -->
+    <style name="CardStyleThemeOverlay" parent="Widget.MaterialComponents.CardView">
+        <item name="materialThemeOverlay">@style/CardStyle</item>
+    </style>
+    <style name="CardStyle">
+        <item name="colorPrimary">@color/primary_mid</item>
+        <item name="colorSurface">@color/primary_light</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <!-- Fab style. -->
+    <style name="FabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <!-- Button style. -->
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <!-- Bottom nav style.-->
+    <style name="BottomNavThemeOverlay" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/BottomNav</item>
+    </style>
+    <style name="BottomNav">
+        <item name="colorPrimary">?attr/colorPrimaryDark</item>
+        <item name="colorOnPrimary">?attr/colorOnPrimaryDark</item>
+    </style>
+
+    <!-- Snackbar style. -->
+    <style name="SnackbarStyle" parent="Widget.MaterialComponents.Snackbar">
+        <item name="actionTextColorAlpha">1</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="backgroundTint">@color/primary_dark</item>
+    </style>
+    <style name="SnackbarButtonStyle">
+        <item name="android:textColor">@color/secondary_light</item>
+        <item name="backgroundTint">@color/primary_dark</item>
+    </style>
+    <style name="SnackbarTextViewStyle" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:alpha">1.0</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!-- Custom horizontal divider element -->
+    <style name="Divider">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Custom theming -->
+    <style name="Theme.FirebaseTest.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+</resources>

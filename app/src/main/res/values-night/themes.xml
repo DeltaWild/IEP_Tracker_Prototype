@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Top level theme -->
+    <style name="Theme.FirebaseTest.DayNight" parent="Theme.FirebaseTest.Dark" />
+    <!-- Base application theme. -->
+    <style name="Theme.FirebaseTest.Dark" parent="Theme.FirebaseTest">
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_mid</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary_light</item>
+
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimaryDark">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_mid</item>
+        <item name="colorSecondaryDark">@color/secondary_dark</item>
+        <item name="colorSecondaryVariant">@color/secondary_light</item>
+
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondaryDark">@color/white</item>
+
+        <!-- Surface colors. -->
+        <item name="colorSurface">?attr/colorPrimary</item>
+        <item name="colorOnSurface">?attr/colorOnPrimary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryDark</item>
+
+        <!-- Card style. -->
+        <item name="materialCardViewStyle">@style/CardStyleThemeOverlay</item>
+
+        <!-- FAB style. -->
+        <item name="floatingActionButtonStyle">@style/FabStyle</item>
+
+        <!-- Button style. -->
+        <item name="buttonStyle">@style/ButtonStyle</item>
+
+        <!-- Bottom nav style.-->
+        <item name="bottomNavigationStyle">@style/BottomNavThemeOverlay</item>
+
+    </style>
+
+    <style name="CardStyleThemeOverlay" parent="Widget.MaterialComponents.CardView">
+        <item name="materialThemeOverlay">@style/CardStyle</item>
+    </style>
+    <style name="CardStyle">
+        <item name="colorPrimary">@color/primary_mid</item>
+        <item name="colorSurface">@color/primary_light</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <style name="FabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorSecondaryVariant</item>
+    </style>
+
+    <style name="BottomNavThemeOverlay" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/BottomNav</item>
+    </style>
+    <style name="BottomNav">
+        <item name="colorPrimary">?attr/colorPrimaryDark</item>
+        <item name="colorOnPrimary">?attr/colorOnPrimaryDark</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:background">?attr/colorSecondary</item>
+    </style>
+
+</resources>
